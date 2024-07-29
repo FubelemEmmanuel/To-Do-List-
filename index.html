@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-LIst</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/e3021c65c2.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div id="hide">
+        <h3>Task has been added</h3>
+    </div>
+    <div class="container">
+       
+        <div class="title">  
+            <h1>To-Do-List Application</h1>
+            <hr>
+        </div>
+        <div class="card">
+            <div class="card-header ">
+                <input type="text" name="task" id="task" class="task-input form-control" placeholder="Task Title">
+                <span><button class="btn btn-success mt-2 ">Add</button></span>
+               <div id="setDate">
+               
+                    <label for="">Start date</label>
+                    <input type="date" class="date date1 form-control mt-3">
+                    <span>
+                        <label for="">End date</label>
+                        <input type="date" class="form-control date date2 mt-3">
+                    </span>              
+               </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-borderless table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                          <tr>
+                            <td>Task  </td>
+                            <td>Duration </td>
+                            <td>Check Task</td>
+                            <td>Delete</td>
+                          </tr>
+                        </thead>
+                        <tbody id="newTask">
+                         
+                        </tbody>
+                  
+                </table>
+            </div>
+
+        </div>
+      
+    </div>
+
+  
+    
+
+<script src="bootstrap.min.js"></script>
+<script src="fontAwesome.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
